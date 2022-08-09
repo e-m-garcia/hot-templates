@@ -19,13 +19,13 @@ $LEPHAREDIR/source/sedtolib -c $LEPHAREDIR/examples/COSMOS.para -t G -GAL_SED $L
 To create the grid of predicted magnitudes:
 
 ```
-$LEPHAREDIR/source/mag_gal  -c $LEPHAREDIR/examples/COSMOS.para -t G -GAL_LIB_IN LIB_45K -GAL_LIB_OUT HOT_45K -MOD_EXTINC 3,12,3,12 -EXTINC_LAW SB_calzetti.dat,extlaw_0.9.dat -EB_V 0.,0.1,0.2,0.3,0.4,0.5,0.6,0.7 -Z_STEP 0.03,0,6 -EM_LINES PHYS -EM_DISPERSION 0.25,0.5,1,2,4
+$LEPHAREDIR/source/mag_gal -c $LEPHAREDIR/examples/COSMOS.para -t G -GAL_LIB_IN LIB_45K -GAL_LIB_OUT HOT_45K -MOD_EXTINC 3,12,3,12 -EXTINC_LAW SB_calzetti.dat,extlaw_0.9.dat -EB_V 0.,0.1,0.2,0.3,0.4,0.5,0.6,0.7 -Z_STEP 0.03,0,6 -EM_LINES PHYS -EM_DISPERSION 0.25,0.5,1,2,4
 ```
 
 To fit objects to the grid, getting redshifts and other properties in the output file (with zero-point spectroscopic adaptation):
 
 ```
-$LEPHAREDIR/source/zphota -c $LEPHAREDIR/examples/COSMOS.para -CAT_IN <galaxy catalog here> -CAT_OUT hot_fit_45k.out -ZPHOTLIB HOT_45K,ALLSTAR_COSMOS,QSO_COSMOS  -ADD_EMLINES 0,100 -AUTO_ADAPT YES
+$LEPHAREDIR/source/zphota -c $LEPHAREDIR/examples/COSMOS.para -CAT_IN <galaxy catalog here> -CAT_OUT hot_fit_45k.out -ZPHOTLIB HOT_45K,ALLSTAR_COSMOS,QSO_COSMOS -ADD_EMLINES 0,100 -AUTO_ADAPT YES
 ```
 
 The set of templates produced for usage consist of 12 templates at 45K and 60K each. These templates reflect existing metallicity and star-formation history parameters of the 12 BC03 (Bruzual & Charlot 2003) templates used in photometric redshift estimations in COSMOS 2015 and COSMOS 2020 (Laigle et al. 2016, Weaver et al. 2022). However, these are reconstructed in FSPS (Conroy & Gunn 2010) which allows for replacing the original Chabrier IMF (Chabrier 2003) with a temperature-dependent Kroupa IMF (Kroupa 2001, Jermyn et al. 2018). The templates are written into a BC03 ASCII file format such that Le Phare can read them.
