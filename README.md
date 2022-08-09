@@ -25,5 +25,5 @@ $LEPHAREDIR/source/mag_gal  -c $LEPHAREDIR/examples/COSMOS.para -t G -GAL_LIB_IN
 To fit objects to the grid, getting redshifts and other properties in the output file (with zero-point adaptation):
 
 ```
-$LEPHAREDIR/source/zphota -c $LEPHAREDIR/examples/COSMOS.para -CAT_IN <galaxy catalog here> -CAT_OUT hot_fit.out -ZPHOTLIB HOT_45K,ALLSTAR_COSMOS,QSO_COSMOS  -ADD_EMLINES 0,100 -AUTO_ADAPT YES
+$LEPHAREDIR/source/zphota -c $LEPHAREDIR/examples/COSMOS.para -CAT_IN <galaxy catalog here> -CAT_OUT hot_fit_45k.out -ZPHOTLIB HOT_45K,ALLSTAR_COSMOS,QSO_COSMOS  -ADD_EMLINES 0,100 -AUTO_ADAPT YES
 ```
