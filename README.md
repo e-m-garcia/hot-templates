@@ -10,7 +10,7 @@ For complete information about Le Phare, including set up and usage, refer to [t
 
 To use HOT Templates in Le Phare, simply move the "LePhareHOT" folder into `$LEPHAREDIR/sed/GAL/`. Now, the templates can be used with ages specified in `$LEPHAREDIR/examples/AGE_BC03COMB.dat` (Previous versions of Le Phare may have `test` in place of `examples`).
 
-For example, to read the 45K templates (for z between 8 and 12) with parameters suggested for the COSMOS catalog:
+For example, to read the 45K templates (for z between 8 and 12) with parameters for COSMOS:
 
 ```
 $LEPHAREDIR/source/sedtolib -c $LEPHAREDIR/examples/COSMOS.para -t G -GAL_SED $LEPHAREDIR/sed/GAL/LePhareHOT/45K/FSPS_TIMF_45K.list -GAL_LIB LIB_45K -SEL_AGE $LEPHAREDIR/examples/AGE_BC03COMB.dat
