@@ -6,7 +6,7 @@ HOT consists of template sets that are optimized for better inference of galacti
 ## Instructions for EAZY:
 
 ## Instructions for Le Phare:
-For complete information about Le Phare, including set up and usage, refer to [the main Le Phare repository](https://gitlab.lam.fr/Galaxies/LEPHARE). The parameters provided in the examples below are taken from suggestions for 12 existing BC03 templates used for determining properties of the COSMOS catalogs as shown in [this readme](https://gitlab.lam.fr/Galaxies/LEPHARE/-/blob/master/examples/README). For prior estimation of redshift and other properties, refer to the BC03 commands and parameters in that readme. Parameters can be modified to fit the demands of the fitting, such as for different filters than specified in `COSMOS.para`.
+For complete information about Le Phare, including set up and usage, refer to [the main Le Phare repository](https://gitlab.lam.fr/Galaxies/LEPHARE). The parameters provided in the examples below are taken from suggestions for 12 existing BC03 templates used for determining properties of the COSMOS catalogs as shown in [this readme](https://gitlab.lam.fr/Galaxies/LEPHARE/-/blob/master/examples/README). For prior estimation of redshift and other properties, refer to the BC03 commands and parameters in that readme. In using HOT, parameters can be modified to fit the demands of the fitting, such as for different filters than specified in `COSMOS.para`.
 
 To use HOT Templates in Le Phare, simply move the "LePhareHOT" folder into `$LEPHAREDIR/sed/GAL/`. Now, the templates can be used with ages specified in `$LEPHAREDIR/examples/AGE_BC03COMB.dat` (Previous versions of Le Phare may have `test` in place of `examples`).
 
