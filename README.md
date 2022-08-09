@@ -8,7 +8,7 @@ HOT consists of template sets that are optimized for better inference of galacti
 ## Instructions for Le Phare:
 To set up and run Le Phare, refer to [the main Le Phare repository](https://gitlab.lam.fr/Galaxies/LEPHARE). For prior estimation of redshift and other properties, use the templates and ages specified at the bottom update of [this readme](https://gitlab.lam.fr/Galaxies/LEPHARE/-/blob/master/sed/GAL/BC03_CHAB/README).
 
-To use HOT Templates in Le Phare, simply move the "LePhareHOT" folder into `$LEPHAREDIR/sed/GAL/`. Now, the templates can be used with ages specified in `$LEPHAREDIR/examples/AGE_BC03COMB.dat` (Previous versions of LePhare may have `test` in place of `examples`).
+To use HOT Templates in Le Phare, simply move the "LePhareHOT" folder into `$LEPHAREDIR/sed/GAL/`. Now, the templates can be used with ages specified in `$LEPHAREDIR/examples/AGE_BC03COMB.dat` (Previous versions of Le Phare may have `test` in place of `examples`).
 
 For example, to read the 45K templates (for z between 8 and 12) with parameters suggested for the COSMOS catalog:
 
