@@ -22,7 +22,7 @@ To create the grid of predicted magnitudes:
 $LEPHAREDIR/source/mag_gal  -c $LEPHAREDIR/examples/COSMOS.para -t G -GAL_LIB_IN LIB_45K -GAL_LIB_OUT HOT_45K -MOD_EXTINC 3,12,3,12 -EXTINC_LAW SB_calzetti.dat,extlaw_0.9.dat -EB_V 0.,0.1,0.2,0.3,0.4,0.5,0.6,0.7 -Z_STEP 0.03,0,6 -EM_LINES PHYS -EM_DISPERSION 0.25,0.5,1,2,4
 ```
 
-To fit objects to the grid, getting redshifts and other properties in the output file (with zero-point adaptation):
+To fit objects to the grid, getting redshifts and other properties in the output file (with zero-point spectroscopic adaptation):
 
 ```
 $LEPHAREDIR/source/zphota -c $LEPHAREDIR/examples/COSMOS.para -CAT_IN <galaxy catalog here> -CAT_OUT hot_fit_45k.out -ZPHOTLIB HOT_45K,ALLSTAR_COSMOS,QSO_COSMOS  -ADD_EMLINES 0,100 -AUTO_ADAPT YES
