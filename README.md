@@ -4,7 +4,7 @@
 HOT consists of template sets that are optimized for better inference of galactic properties for very high redshift, photometric objects. This is accomplished by asserting hotter gas temperatures of 45K and 60K in star-forming regions for z = 8-12 and z > 12 respectively, resulting in bottom-lighter/top-heavier IMFs. For further details and justification, refer to [the corresponding paper here](<insert link>).  The paper demonstrates the application of templates based on JWST objects in the respective redshift windows.  It also reports the properties of the input stellar populations of the templates.
 
 ## Instructions for EAZY:
-To use the templates for EAZY, clone or download the repository and store in the relevant `tempaltes/` location.  The paths for the `45k` and `60k` sets are relative to this repository, such as in [fsps_45k.param](./eazyHOT/45k/fsps_45k.param) and [fsps_60k.param](./eazyHOT/60k/fsps_60k.param).  To switch to these templates, in EAZY set the parameter `TEMPLATES_PATH` to:
+To use the templates for EAZY, clone or download the "fsps-hot" repository and store in the relevant `templates/` location.  The paths for the `45k` and `60k` sets are relative to this repository, such as in [fsps_45k.param](./eazyHOT/45k/fsps_45k.param) and [fsps_60k.param](./eazyHOT/60k/fsps_60k.param).  To switch to these templates, in EAZY set the parameter `TEMPLATES_PATH` to:
 
 ```
 TEMPLATES_PATH=templates/hot-templates/eazyHOT/45k/fsps_45k.params
