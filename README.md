@@ -7,13 +7,13 @@ HOT consists of template sets that are optimized for better inference of galacti
 To use the templates for EAZY, clone or download the "fsps-hot" repository and store in the relevant `templates/` location.  The paths for the `45k` and `60k` sets are relative to this repository, such as in [fsps_45k.param](./eazyHOT/45k/fsps_45k.param) and [fsps_60k.param](./eazyHOT/60k/fsps_60k.param).  To switch to these templates, in EAZY set the parameter `TEMPLATES_PATH` to:
 
 ```
-TEMPLATES_PATH=templates/hot-templates/fsps-hot/45k/fsps_45k.params
+TEMPLATES_PATH=templates/fsps-hot/45k/fsps_45k.params
 ```
 
 or
 
 ```
-TEMPLATES_PATH=templates/hot-templates/fsps-hot/60k/fsps_60k.params
+TEMPLATES_PATH=templates/fsps-hot/60k/fsps_60k.params
 ```
 
 ## Instructions for LePhare:
