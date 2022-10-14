@@ -1,5 +1,6 @@
 # High-Redshift Optimized Templates (HOT)
 *Sets of templates for EAZY and LePhare photometric template fitting at z > 8*
+[![DOI](https://zenodo.org/badge/523006002.svg)](https://zenodo.org/badge/latestdoi/523006002)
 
 HOT consists of template sets that are optimized for better inference of galactic properties for very high redshift, photometric objects. This is accomplished by asserting hotter gas temperatures of 45K and 60K in star-forming regions for z = 8-12 and z > 12 respectively, resulting in bottom-lighter/top-heavier IMFs. For further details and justification, refer to [the corresponding paper here](https://arxiv.org/abs/2208.07879).  The paper demonstrates the application of templates based on JWST objects in the respective redshift windows.  It also reports the properties of the input stellar populations of the templates.
 
